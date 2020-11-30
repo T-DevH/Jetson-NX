@@ -1,4 +1,4 @@
-# Jetson Nano with JetPack-4.4
+# Jetson NX with JetPack-4.4
 
 This is repository from ([JK Jung](https://jkjung-avt.github.io/jetpack-4.4/)).
 It holds the scripts/programs to set up the software development environment on Jetson Nano.
