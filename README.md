@@ -1,4 +1,3 @@
-# Jetson NX with JetPack-4.4
 
 # Jetson NX with JetPack-4.4
 
