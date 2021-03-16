@@ -1,15 +1,12 @@
 
 # Jetson NX with JetPack-4.4
 
-This is repository from ([JK Jung](https://jkjung-avt.github.io/jetpack-4.4/)).
-It holds the scripts/programs to set up the software development environment on Jetson Nano.
+Thanks to ([JK Jung](https://jkjung-avt.github.io/jetpack-4.4/)) for providing most of the scripts.
+This repo holds the scripts/programs to set up the software development environment on Jetson NX.
 
-To set Jetson Nano to 10W performance mode ([reference](https://devtalk.nvidia.com/default/topic/1050377/jetson-nano/deep-learning-inference-benchmarking-instructions/)), execute the following from a terminal:
+March, 16, 2021: Supporting Jetpack 4.4
 
-   ```shell
-   $ sudo nvpmodel -m 0
-   $ sudo jetson_clocks
-   ```
+
 For Jetson NX
 ```shell
 $ sudo nvpmodel -m 2
