@@ -32,7 +32,7 @@ $ ./install_protobuf-3.8.0.sh
 $ sudo pip3 install numpy matplotlib
 ```
 ## Testing camera and cv2
-```shel
+```shell
 $python3 tegra-cam.py --usb --vid 0
 ```
 ## Install DeepStream
@@ -45,7 +45,7 @@ Optimum memory management with zero-memory copy between plugins and the use of v
 
 Enter the following commands to install the prerequisite packages:
 
-'''
+```shell
 $ sudo apt install \
 libssl1.0.0 \
 libgstreamer1.0-0 \
@@ -56,42 +56,42 @@ gstreamer1.0-plugins-ugly \
 gstreamer1.0-libav \
 libgstrtspserver-1.0-0 \
 libjansson4=2.11-1
-'''
+```
 
 Install librdkafka (to enable Kafka protocol adaptor for message broker):
 
-'''
+```shell
 $ git clone https://github.com/edenhill/librdkafka.git
-'''
+```
 
 Configure and build the library:
 
-'''
+```shell
 $ cd librdkafka
 $ git reset --hard 7101c2310341ab3f4675fc565f64f0967e135a6a
 ./configure
 $ make
 $ sudo make install
-'''
+```
 
 Copy the generated libraries to the deepstream directory:
 
-'''
+```shell
 $ sudo mkdir -p /opt/nvidia/deepstream/deepstream-5.1/lib
 $ sudo cp /usr/local/lib/librdkafka* /opt/nvidia/deepstream/deepstream-5.1/lib
-'''
+```
 
 The next step is to install Deepstream SDK. I am using debian package that can be downloaded from the nvidia develper website. 
 
-'''
+```shell
 $ sudo apt-get install ./deepstream-5.1_5.1.0-1_arm64.deb
-'''
+```
 
 Run deepstream-app (the reference application):
 
-'''
+```shell
 deepstream-app -c /opt/nvidia/deepstream/deepstream-5.0/samples/configs/deepstream-app/source1_usb_dec_infer_resnet_int8.txt
-'''
+```
 
 
 
