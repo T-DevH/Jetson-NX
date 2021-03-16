@@ -41,7 +41,7 @@ DeepStream is an optimized graph architecture built using the open source GStrea
 All the individual blocks are various plugins that are used. At the bottom are the different hardware engines that are utilized throughout the application. 
 Optimum memory management with zero-memory copy between plugins and the use of various accelerators ensure the highest performance.
 
-![Jetson nano](https://github.com/T-DevH/Jetson-NX/blob/master/images/nano.jpg)
+![Deepstream](https://github.com/T-DevH/Jetson-NX/blob/master/images/DS_overview_graph_architecture.png)
 
 Enter the following commands to install the prerequisite packages:
 
